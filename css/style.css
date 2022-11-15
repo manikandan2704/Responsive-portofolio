@@ -328,6 +328,10 @@ section{
     width: 65%;
 }
 
+
+
+
+
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -353,6 +357,7 @@ section{
     font-size:2rem;
     padding-bottom: 1rem;
     color:var(--black);
+    padding-top: 4rem;
 }
 
 .services .box-container .box p{
@@ -380,7 +385,6 @@ section{
 .services .box-container .box:hover > *{
     color:#fff;
 }
-
 .portfolio .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -425,11 +429,22 @@ section{
     opacity: 0;
     transition-delay: .3s;
 }
+.portfolio .box-container .box .content a{
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
 
 .portfolio .box-container .box:hover .content h3{
     transform: translateY(0rem);
     opacity: 1;
 }
+
+
+
 
 .contact form{
     margin:1rem auto;
@@ -471,11 +486,51 @@ section{
 
 .credits span{
     color: var(--green);
+} 
+
+
+
+#contact .contact {
+	
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
 }
-
-
-
-
+#contact .contact-items {
+	/* max-width: 400px; */
+	width: 100%;
+    display: flex;
+}
+#contact .contact-item {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 30px;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+    align-items: center;
+}
 
 
 
@@ -490,7 +545,7 @@ section{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media (max-width:768px){
 
     html{
         font-size: 55%;
@@ -515,7 +570,7 @@ section{
 
 }
 
-@media (max-width:450px){
+@media (max-width:425px){
 
     html{
         font-size: 50%;
@@ -524,6 +579,9 @@ section{
     .header{
         width:100%;
         border-right: 0;
+    }
+    .contact-items .contact-item{
+        width: 100%;
     }
 
 }
